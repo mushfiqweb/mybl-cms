@@ -9,11 +9,11 @@ import { APP_PREFIX_PATH } from '@/constants/route.constant'
 
 const appsNavigationConfig: NavigationTree[] = [
     {
-        key: 'apps',
+        key: 'demo',
         path: '',
-        title: 'APPS',
+        title: 'Demo Samples',
         translateKey: 'nav.apps',
-        icon: 'apps',
+        icon: 'demo',
         type: NAV_ITEM_TYPE_TITLE,
         authority: [ADMIN, USER],
         subMenu: [

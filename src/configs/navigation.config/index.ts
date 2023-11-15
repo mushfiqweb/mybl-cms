@@ -1,15 +1,15 @@
+import type { NavigationTree } from '@/@types/navigation'
 import appsNavigationConfig from './apps.navigation.config'
-import uiComponentNavigationConfig from './ui-components.navigation.config'
-import pagesNavigationConfig from './pages.navigation.config'
 import authNavigationConfig from './auth.navigation.config'
 import docNavigationConfig from './doc.navigation.config'
-import type { NavigationTree } from '@/@types/navigation'
+import pagesNavigationConfig from './pages.navigation.config'
+import uiComponentNavigationConfig from './ui-components.navigation.config'
 
 const navigationConfig: NavigationTree[] = [
-    ...appsNavigationConfig,
     ...uiComponentNavigationConfig,
-    ...pagesNavigationConfig,
+    ...appsNavigationConfig,
     ...authNavigationConfig,
+    ...pagesNavigationConfig,
     ...docNavigationConfig,
 ]
 
